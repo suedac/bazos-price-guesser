@@ -1,0 +1,26 @@
+{
+    "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Price Analysis",
+            "transformation": {
+                "fields": ["summary", "listings"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "summary": {
+                        "label": "Price Summary",
+                        "format": "object"
+                    },
+                    "listings": {
+                        "label": "Reference Listings",
+                        "format": "object"
+                    }
+                }
+            }
+        }
+    }
+}

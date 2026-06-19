@@ -1,0 +1,39 @@
+
+{
+    "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": ["title", "parsedPrice", "price", "location", "description", "listingUrl"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "title": {
+                        "label": "Title",
+                        "format": "text"
+                    },
+                    "parsedPrice": {
+                        "label": "Price (number)",
+                        "format": "number"
+                    },
+                    "price": {
+                        "label": "Price",
+                        "format": "text"
+                    },
+                    "location": {
+                        "label": "Location",
+                        "format": "text"
+                    },
+                    "listingUrl": {
+                        "label": "Listing URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}

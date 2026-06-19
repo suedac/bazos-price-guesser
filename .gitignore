@@ -1,0 +1,22 @@
+# This file tells Git which files shouldn't be added to source control
+
+.DS_Store
+.idea
+.vscode
+.zed
+dist
+node_modules
+apify_storage
+storage
+
+# Added by Apify CLI
+.venv
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*

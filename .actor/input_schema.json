@@ -1,0 +1,28 @@
+{
+    "$schema": "https://apify.com/schemas/v1/input.ide.json",
+    "title": "bazos crawler",
+    "type": "object",
+    "schemaVersion": 1,
+    "required": ["keyword", "location"],
+    "properties": {
+        "keyword": {
+            "title": "keyword",
+            "type": "string",
+            "description": "search term to look for in bazos",
+            "editor": "textfield"
+        },
+        "location": {
+            "title": "location",
+            "type": "string",
+            "description": "search location to look for in bazos",
+            "editor": "textfield"
+        },
+        "maxPages": {
+            "title": "Max Pages",
+            "type": "integer",
+            "description": "Maximum number of pages to scrape",
+            "default": 5,
+            "editor": "number"
+        }
+    }
+}
